@@ -33,3 +33,5 @@ Carthage
 Pods/
 
 *.swp
+
+.build/
