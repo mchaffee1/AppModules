@@ -1,0 +1,12 @@
+use_frameworks!
+
+target 'AppModules_Example' do
+  pod 'AppModules', :path => '../'
+
+  target 'AppModules_ExampleTests' do
+    inherit! :search_paths
+
+    pod 'Quick', '~> 1.0.0'
+  pod 'Nimble', '~> 5.1.1'
+  end
+end

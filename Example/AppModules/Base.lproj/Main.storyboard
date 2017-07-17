@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="LxK-BM-MUO">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Z6v-6c-2R2">
+            <objects>
+                <navigationController id="LxK-BM-MUO" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bjT-qG-bqM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="9Z6-Jg-qNc" kind="relationship" relationship="rootViewController" id="WNM-dN-hlk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pfb-by-exj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-369" y="-81"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4DA-GU-Wqe">
+            <objects>
+                <viewController id="9Z6-Jg-qNc" customClass="ViewController" customModule="AppModules_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HIC-ri-hIr"/>
+                        <viewControllerLayoutGuide type="bottom" id="Oxs-tM-DZj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xpw-ZE-rHM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJQ-Xs-g8h">
+                                <rect key="frame" x="112" y="132" width="151" height="30"/>
+                                <state key="normal" title="Load Example Module"/>
+                                <connections>
+                                    <action selector="loadBtn_touchUpInside:" destination="9Z6-Jg-qNc" eventType="touchUpInside" id="efj-ip-Rtg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XJQ-Xs-g8h" firstAttribute="top" secondItem="HIC-ri-hIr" secondAttribute="bottom" constant="68" id="crH-4I-oUw"/>
+                            <constraint firstItem="XJQ-Xs-g8h" firstAttribute="centerX" secondItem="Xpw-ZE-rHM" secondAttribute="centerX" id="iAh-b2-man"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZJS-0e-jes"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WkV-Ib-pmn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="728.79999999999995" y="-55.322338830584712"/>
+        </scene>
+    </scenes>
+</document>
