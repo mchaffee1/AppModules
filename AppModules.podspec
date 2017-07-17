@@ -28,7 +28,7 @@ modules) using HTTP verbs (currently GET is implemented).
   s.homepage         = 'https://github.com/mchaffee1/AppModules'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'Apache', :file => 'LICENSE' }
-  s.author           = { 'mchaffee1' => 'mchaffee@thoughtworks.com' }
+  s.author           = { 'Michael Chaffee' => 'mchaffee@gmail.com' }
   s.source           = { :git => 'https://github.com/mchaffee1/AppModules.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
