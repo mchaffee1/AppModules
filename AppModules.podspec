@@ -18,14 +18,18 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+AppModules addresses the problem of distributed development in environments where a common repository is impossible for legal
+or practical reasons.  Developers can create, maintain, and test Modules which can be incorporated easily into other applications
+by those other applications' developers.  The relationship between a Module and its application, or between Modules within
+an application, is loosely modeled upon the REST pattern.  A Module is addressable by its containing application (or by other
+modules) using HTTP verbs (currently GET is implemented).
                        DESC
 
   s.homepage         = 'https://github.com/mchaffee1/AppModules'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'Apache', :file => 'LICENSE' }
   s.author           = { 'mchaffee1' => 'mchaffee@thoughtworks.com' }
-  s.source           = { :git => 'git@github.com:mchaffee1/AppModules.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/mchaffee1/AppModules.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
